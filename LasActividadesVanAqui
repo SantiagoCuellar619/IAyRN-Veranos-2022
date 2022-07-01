@@ -1,0 +1,130 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "IA_Ejercicio1_SantiagoCuellar_1957555.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPETT3+r/jCk3najWl8ajsD",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/SantiagoCuellar619/IAyRN-Veranos-2022/blob/main/LasActividadesVanAqui\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 20,
+      "metadata": {
+        "id": "mzooz3ZMVKbi",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "6c5c8850-8198-4389-daf0-75d2a992f4e1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "¿Cuál es tu nombre?: Santiago\n",
+            "Saludos para ti Santiago\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Actividad 2. Ejercicios con Python    Nombre: Santiago Alexis Cuellar Cepeda  Matricula:1957555 Hora: N1 N2 N3\n",
+        "#Ejercicio 1.Escribe un programa que le pida al usuario por su nombre y que lo salude con su nombre, excepto si se llama “Ana”, “Juan”, y “Pedro”.\n",
+        "message = input(\"¿Cuál es tu nombre?: \")\n",
+        "saludo= (\"Saludos para ti\")\n",
+        "if message == \"Ana\" or message == \"Juan\" or message ==\"Pedro\":\n",
+        "  print(\"Nombre incorrecto\")\n",
+        "else:  \n",
+        "  print(saludo,message)\n",
+        "#Comentarios:El mensaje que se introduce es el nombre, funciona con el comando de if donde si detecta que pusiste estos nombres del ejercicio no te salude."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Ejercicio 2.Escribe una función que regrese el último elemento de una lista y que revierta el orden de la lista e imprima la lista revertida\n",
+        "def my_function(lista):\n",
+        "  print(Lista[-1])\n",
+        "  print(list(reversed(Lista)))\n",
+        "Lista= [\"Bruselas\", \"Brujas\", \"Amberes\", \"Lieja\", \"Genk\"]\n",
+        "my_function(Lista)\n",
+        "#Comentarios:La función es una lista colocada,con def definimos que la función debe imprimir el último elemento de la lista y la lista invertida al accionar la función."
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YryAOHtbAP68",
+        "outputId": "c9fb06aa-1054-4523-8bfc-4101763643c4"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Genk\n",
+            "['Genk', 'Lieja', 'Amberes', 'Brujas', 'Bruselas']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Ejercicio 3.Escribe una función que toma una lista de strings y los imprima línea por línea en un marco rectangular.\n",
+        "def my_function(lista):\n",
+        "  for elemento in lista:\n",
+        "    print(elemento)\n",
+        "Lista= [\"***************\", \"*Arriba       *\", \"*los          *\", \"*poderosisimos*\", \"*rojiblancos  *\", \"*del          *\", \"*Atlas        *\",\"***************\"]\n",
+        "my_function(Lista)\n",
+        "#Comentarios:Definimos la función de la lista puesta,usamos el for para imprimir línea por línea de la lista pero agregamos * a la lista para crear un marco."
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iNEMl_0XAZKs",
+        "outputId": "e8b79e5b-d87c-42d3-cd64-3c762a6e55cc"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "***************\n",
+            "*Arriba       *\n",
+            "*los          *\n",
+            "*poderosisimos*\n",
+            "*rojiblancos  *\n",
+            "*del          *\n",
+            "*Atlas        *\n",
+            "***************\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
